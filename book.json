@@ -2,6 +2,7 @@
   "title": "Java-starter",
   "author": "qingcheng",
   "language": "zh-hans",
+  "plugins": ["theme-comscore", "toggle-chapters"],
   "pluginsConfig": {
     "theme-default": {
       "showLevel": true
