@@ -13,13 +13,6 @@
     "anchor-navigation-ex"
   ],
   "pluginsConfig": {
-    "anchor-navigation-ex": {
-      "showLevel": false,
-      "associatedWithSummary": true
-    },
-    "theme-default": {
-      "showLevel": true
-    },
     "edit-link": {
       "base": "//github.com/easterCat/java-starter/master",
       "label": "编辑此页面"
