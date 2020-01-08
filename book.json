@@ -14,10 +14,10 @@
   ],
   "pluginsConfig": {
     "anchor-navigation-ex": {
-      "showLevel": true
+      "associatedWithSummary": true
     },
     "theme-default": {
-      "showLevel": false
+      "showLevel": true
     },
     "edit-link": {
       "base": "//github.com/easterCat/java-starter/master",
