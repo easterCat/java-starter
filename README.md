@@ -40,11 +40,43 @@ GitHub Pages 的静态资源支持下面 3 个来源：
 gitbook build ./ ./docs
 ```
 
+## 添加 theme
+
+```
+touch book.json
+```
+
+内容
+
+```
+{
+  "title": "Java-starter",
+  "author": "qingcheng",
+  "authorHomepage": "http://www.baidu.com",
+  "language": "zh-hans",
+  "plugins": [
+    "theme-code",
+    "splitter",
+    "prism",
+    "folding-chapters",
+    "-sharing"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
+  }
+}
+```
+
+最后`gitbook install`更新依赖
+
 ## 操作
 
 - gitbook init
 - gitbook build
 - gitbool serve
+- gitbook install
 
 ## doc
 

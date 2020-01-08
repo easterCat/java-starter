@@ -1,0 +1,18 @@
+{
+  "title": "Java-starter",
+  "author": "qingcheng",
+  "authorHomepage": "http://www.baidu.com",
+  "language": "zh-hans",
+  "plugins": [
+    "theme-code",
+    "splitter",
+    "prism",
+    "folding-chapters",
+    "-sharing"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
+  }
+}

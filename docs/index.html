@@ -1,20 +1,32 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>初始化 · GitBook</title>
+        <title>初始化 · Java-starter</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="qingcheng">
         
         
     
     <link rel="stylesheet" href="gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
@@ -64,12 +76,19 @@
     </head>
     <body>
         
+
+
 <div class="book">
     <div class="book-summary">
         
+            <div class="theme-code-header">
+                <a href="" class="link">
+                    <h1 class="title">Java-starter</h1>
+                </a>
+            </div>
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="输入并搜索" />
 </div>
 
             
@@ -92,6 +111,8 @@
                 <a href="./">
             
                     
+                        <b>1.1.</b>
+                    
                     初始化
             
                 </a>
@@ -112,6 +133,8 @@
                 <a href="map-shi-yong/">
             
                     
+                        <b>2.1.</b>
+                    
                     集合
             
                 </a>
@@ -126,6 +149,8 @@
                 <a href="map-shi-yong/map.html">
             
                     
+                        <b>2.1.1.</b>
+                    
                     Map
             
                 </a>
@@ -138,6 +163,8 @@
             
                 <a href="map-shi-yong/list.html">
             
+                    
+                        <b>2.1.2.</b>
                     
                     List
             
@@ -158,8 +185,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="http://www.baidu.com" target="_blank" class="gitbook-link">
+            Author: qingcheng
         </a>
     </li>
 </ul>
@@ -198,7 +225,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="gitbook-cli">gitbook-cli</h2>
-<pre><code>npm install -g gitbook-cli
+<pre class="language-"><code>npm install -g gitbook-cli
 mkdir book
 cd book
 gitbook init
@@ -207,12 +234,12 @@ gitbook init
 <li>README.md &#x5C06;&#x5305;&#x542B;&#x7535;&#x5B50;&#x4E66;&#x7684;&#x7B80;&#x4ECB;</li>
 <li>SUMMARY.md &#x5C06;&#x5305;&#x542B;&#x7535;&#x5B50;&#x4E66;&#x7684;&#x76EE;&#x5F55;</li>
 </ul>
-<pre><code>gitbook serve
+<pre class="language-"><code>gitbook serve
 </code></pre><p>&#x53EF;&#x4EE5;&#x5728;<a href="http://localhost:4000&#x9884;&#x89C8;&#x4E66;&#x7C4D;" target="_blank">http://localhost:4000&#x9884;&#x89C8;&#x4E66;&#x7C4D;</a></p>
-<pre><code>gitbook build
+<pre class="language-"><code>gitbook build
 </code></pre><p>&#x5C06;&#x7535;&#x5B50;&#x4E66;&#x7684;&#x5185;&#x5BB9;&#x5236;&#x4F5C;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#x5728; _book &#x76EE;&#x5F55;&#x4E2D;&#x3002;</p>
 <h2 id="github-pages">GitHub Pages</h2>
-<p>GitHub Pages &#x662F; GitHub &#x63D0;&#x4F9B;&#x7684;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x6258;&#x7BA1;&#x670D;&#x52A1;&#x3002;<code>https://&lt;username&gt;.github.io/&lt;repository&gt;/</code></p>
+<p>GitHub Pages &#x662F; GitHub &#x63D0;&#x4F9B;&#x7684;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x6258;&#x7BA1;&#x670D;&#x52A1;&#x3002;<code>https://<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>username</span><span class="token punctuation">&gt;</span></span>.github.io/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>repository</span><span class="token punctuation">&gt;</span></span>/</code></p>
 <p>GitHub Pages &#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x652F;&#x6301;&#x4E0B;&#x9762; 3 &#x4E2A;&#x6765;&#x6E90;&#xFF1A;</p>
 <ul>
 <li>master &#x5206;&#x652F;</li>
@@ -220,12 +247,35 @@ gitbook init
 <li>gh-pages &#x5206;&#x652F;</li>
 </ul>
 <p>&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5728;&#x751F;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;&#x7684;&#x65F6;&#x5019;&#x66F4;&#x6539; build &#x547D;&#x4EE4;</p>
-<pre><code>gitbook build ./ ./docs
-</code></pre><h2 id="&#x64CD;&#x4F5C;">&#x64CD;&#x4F5C;</h2>
+<pre class="language-"><code>gitbook build ./ ./docs
+</code></pre><h2 id="&#x6DFB;&#x52A0;-theme">&#x6DFB;&#x52A0; theme</h2>
+<pre class="language-"><code>touch book.json
+</code></pre><p>&#x5185;&#x5BB9;</p>
+<pre class="language-"><code>{
+  &quot;title&quot;: &quot;Java-starter&quot;,
+  &quot;author&quot;: &quot;qingcheng&quot;,
+  &quot;authorHomepage&quot;: &quot;http://www.baidu.com&quot;,
+  &quot;language&quot;: &quot;zh-hans&quot;,
+  &quot;plugins&quot;: [
+    &quot;theme-code&quot;,
+    &quot;splitter&quot;,
+    &quot;prism&quot;,
+    &quot;folding-chapters&quot;,
+    &quot;-sharing&quot;
+  ],
+  &quot;pluginsConfig&quot;: {
+    &quot;theme-default&quot;: {
+      &quot;showLevel&quot;: true
+    }
+  }
+}
+</code></pre><p>&#x6700;&#x540E;<code>gitbook install</code>&#x66F4;&#x65B0;&#x4F9D;&#x8D56;</p>
+<h2 id="&#x64CD;&#x4F5C;">&#x64CD;&#x4F5C;</h2>
 <ul>
 <li>gitbook init</li>
 <li>gitbook build</li>
 <li>gitbool serve</li>
+<li>gitbook install</li>
 </ul>
 <h2 id="doc">doc</h2>
 <ul>
@@ -270,14 +320,23 @@ gitbook init
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"初始化","level":"1.1","depth":1,"next":{"title":"集合","level":"2.1","depth":1,"path":"map-shi-yong/README.md","ref":"map-shi-yong/README.md","articles":[{"title":"Map","level":"2.1.1","depth":2,"path":"map-shi-yong/map.md","ref":"map-shi-yong/map.md","articles":[]},{"title":"List","level":"2.1.2","depth":2,"path":"map-shi-yong/list.md","ref":"map-shi-yong/list.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-01-08T03:34:08.475Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-08T03:40:41.222Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"初始化","level":"1.1","depth":1,"next":{"title":"集合","level":"2.1","depth":1,"path":"map-shi-yong/README.md","ref":"map-shi-yong/README.md","articles":[{"title":"Map","level":"2.1.1","depth":2,"path":"map-shi-yong/map.md","ref":"map-shi-yong/map.md","articles":[]},{"title":"List","level":"2.1.2","depth":2,"path":"map-shi-yong/list.md","ref":"map-shi-yong/list.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-code","splitter","prism","folding-chapters","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-code":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"qingcheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java-starter","language":"zh-hans","authorHomepage":"http://www.baidu.com","gitbook":"*"},"file":{"path":"README.md","mtime":"2020-01-08T03:46:33.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-08T03:46:42.341Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
+
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -296,14 +355,11 @@ gitbook init
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
+        
     </body>
 </html>
 
