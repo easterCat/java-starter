@@ -16,7 +16,7 @@
   - [字符串](Java基础/字符串.md)
   - [Character类](Java基础/Character类.md)
   - [正则表达式](Java基础/正则表达式.md)
-  - [流(Stream)、文件(File)和IO](Java基础/流(Stream)、文件(File)和IO.md)
+  - [流,文件和IO](Java基础/流,文件和IO.md)
   - [StringBuffer和StringBuilder类](Java基础/StringBuffer和StringBuilder类.md)
   - [Map](Java基础/map.md)
   - [List](Java基础/list.md)
