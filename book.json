@@ -9,7 +9,9 @@
     "chapter-fold",
     "back-to-top-button",
     "edit-link",
-    "lightbox"
+    "lightbox",
+    "copy-code-button",
+    "page-toc-button"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -18,6 +20,10 @@
     "edit-link": {
       "base": "//github.com/easterCat/java-starter/master",
       "label": "编辑此页面"
+    },
+    "page-toc-button": {
+      "maxTocDepth": 2,
+      "minTocSize": 2
     }
   }
 }
