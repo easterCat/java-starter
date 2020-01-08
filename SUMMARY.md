@@ -20,6 +20,8 @@
   - [StringBuffer和StringBuilder类](Java基础/StringBuffer和StringBuilder类.md)
   - [Map](Java基础/map.md)
   - [List](Java基础/list.md)
+  - [多线程编程](Java基础/多线程编程.md)
+  - [泛型](Java基础/泛型.md)
 
 ## 数据结构与算法
 
