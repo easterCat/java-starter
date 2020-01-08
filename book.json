@@ -11,7 +11,7 @@
     "edit-link",
     "lightbox",
     "copy-code-button",
-    "intopic-toc"
+    "simple-page-toc"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -21,8 +21,9 @@
       "base": "//github.com/easterCat/java-starter/master",
       "label": "编辑此页面"
     },
-    "intopic-toc": {
-      "label": "Navigation"
+    "simple-page-toc": {
+      "maxDepth": 3,
+      "skipFirstH1": true
     }
   }
 }
