@@ -81,6 +81,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Java排序算法.html" />
+    
     
     <link rel="prev" href="./" />
     
@@ -210,6 +212,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.1.2" data-path="Java排序算法.html">
+            
+                <a href="Java排序算法.html">
+            
+                    
+                    Java 排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -260,13 +275,169 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x7EBF;&#x6027;&#x8868;&#x6570;&#x7EC4;&#x961F;&#x5217;&#x6808;&#x94FE;&#x8868;"><b>1.1. </b>&#x7EBF;&#x6027;&#x8868;(&#x6570;&#x7EC4;,&#x961F;&#x5217;,&#x6808;,&#x94FE;&#x8868;)</a></li><li><span class="title-icon "></span><a href="#doc"><b>1.2. </b>doc</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x7EBF;&#x6027;&#x8868;&#x6570;&#x7EC4;&#x961F;&#x5217;&#x6808;&#x94FE;&#x8868;"><a name="&#x7EBF;&#x6027;&#x8868;&#x6570;&#x7EC4;&#x961F;&#x5217;&#x6808;&#x94FE;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x7EBF;&#x6027;&#x8868;&#x6570;&#x7EC4;&#x961F;&#x5217;&#x6808;&#x94FE;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7EBF;&#x6027;&#x8868;(&#x6570;&#x7EC4;,&#x961F;&#x5217;,&#x6808;,&#x94FE;&#x8868;)</h2>
-<h4 id="&#x6570;&#x7EC4;"><a name="&#x6570;&#x7EC4;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x7EC4;</h4>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7EBF;&#x6027;&#x8868;&#x6570;&#x7EC4;&#x961F;&#x5217;&#x6808;&#x94FE;&#x8868;"><b>1. </b>&#x7EBF;&#x6027;&#x8868;(&#x6570;&#x7EC4;,&#x961F;&#x5217;,&#x6808;,&#x94FE;&#x8868;)</a></li><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x7EC4;"><b>1.1. </b>&#x6570;&#x7EC4;</a></li><li><span class="title-icon "></span><a href="#doc"><b>1.2. </b>doc</a></li></ul></ul></div><a href="#&#x7EBF;&#x6027;&#x8868;&#x6570;&#x7EC4;&#x961F;&#x5217;&#x6808;&#x94FE;&#x8868;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7EBF;&#x6027;&#x8868;&#x6570;&#x7EC4;&#x961F;&#x5217;&#x6808;&#x94FE;&#x8868;"><a name="&#x7EBF;&#x6027;&#x8868;&#x6570;&#x7EC4;&#x961F;&#x5217;&#x6808;&#x94FE;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x7EBF;&#x6027;&#x8868;&#x6570;&#x7EC4;&#x961F;&#x5217;&#x6808;&#x94FE;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x7EBF;&#x6027;&#x8868;(&#x6570;&#x7EC4;,&#x961F;&#x5217;,&#x6808;,&#x94FE;&#x8868;)</h1>
+<h2 id="&#x6570;&#x7EC4;"><a name="&#x6570;&#x7EC4;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6570;&#x7EC4;</h2>
 <p>&#x5728; Java &#x4E2D;&#xFF0C;&#x6570;&#x7EC4;&#x662F;&#x7528;&#x6765;&#x5B58;&#x653E;&#x540C;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x6CE8;&#x610F;&#x53EA;&#x80FD;&#x5B58;&#x653E;&#x540C;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
 <pre><code>//&#x53EA;&#x58F0;&#x660E;&#x4E86;&#x7C7B;&#x578B;&#x548C;&#x957F;&#x5EA6;
 &#x6570;&#x636E;&#x7C7B;&#x578B; []  &#x6570;&#x7EC4;&#x540D;&#x79F0; = new &#x6570;&#x636E;&#x7C7B;&#x578B;[&#x6570;&#x7EC4;&#x957F;&#x5EA6;];
 //&#x58F0;&#x660E;&#x4E86;&#x7C7B;&#x578B;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x8D4B;&#x503C;&#xFF0C;&#x5927;&#x5C0F;&#x7531;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x51B3;&#x5B9A;
 &#x6570;&#x636E;&#x7C7B;&#x578B; [] &#x6570;&#x7EC4;&#x540D;&#x79F0; = {&#x6570;&#x7EC4;&#x5143;&#x7D20;1&#xFF0C;&#x6570;&#x7EC4;&#x5143;&#x7D20;2&#xFF0C;......}
+</code></pre><p>&#x6A21;&#x62DF; Array</p>
+<pre><code>public class Array {
+    private int[] intArray;
+    private int index;
+    public int length;
+
+    public Array(int max) {
+        this.length = max;
+        this.intArray = new int[max];
+        this.index = 0;
+    }
+
+    // &#x5411;&#x6700;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+    public void push(int value) {
+        intArray[index] = value;
+        index++;
+    }
+
+    // &#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5220;&#x9664;
+    public boolean pop() {
+        // &#x540E;&#x9762;&#x7684;&#x6570;&#x636E;&#x5F80;&#x524D;&#x79FB;
+        index--;
+        return true;
+    }
+
+    // &#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5220;&#x9664;
+    public boolean shift() {
+        for (int i = 1; i &lt; index; i++) {
+            intArray[i - 1] = intArray[i];
+        }
+        index--;
+        return true;
+    }
+
+    // &#x5F00;&#x5934;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+    public void unshift(int value) {
+        int[] newArray = new int[this.length + 1];
+        for (int i = 0; i &lt; index; i++) {
+            newArray[i] = intArray[i];
+        }
+        for (int k = 0; k &lt; index; k++) {
+            intArray[k + 1] = newArray[k];
+        }
+        intArray[0] = value;
+        index++;
+    }
+
+    // &#x67E5;&#x627E;&#x4E0B;&#x6807;&#x6240;&#x5728;&#x5185;&#x5BB9;
+    public int find(int key) {
+        int i;
+        for (i = 0; i &lt; index; i++) {
+            if (intArray[i] == key) {
+                break;
+            }
+        }
+        if (i == index) {
+            return -1;
+        }
+        return 1;
+    }
+
+    // &#x5220;&#x9664;&#x5F53;&#x524D;&#x4E0B;&#x6807;&#x6240;&#x5728;&#x5185;&#x5BB9;
+    public boolean remove(int key) {
+        int i = this.find(key);
+        if (i == -1) {
+            return false;
+        }
+
+        for (int k = 0; k &lt; index; k++) {
+            intArray[k] = intArray[k - 1];
+        }
+        index--;
+        return true;
+    }
+
+    // &#x66F4;&#x65B0;&#x4E0B;&#x6807;&#x6240;&#x5728;&#x5185;&#x5BB9;
+    public boolean update(int key, int value) {
+        intArray[key] = value;
+        return true;
+    }
+
+    // &#x6253;&#x5370;&#x6570;&#x7EC4;
+    public void show() {
+        for (int i = 0; i &lt; index; i++) {
+            System.out.print(intArray[i] + &quot; &quot;);
+        }
+        System.out.print(&quot;\n&quot;);
+    }
+
+    // &#x6570;&#x7EC4;&#x4E2D;&#x662F;&#x5426;&#x5305;&#x542B;&#x67D0;&#x4E2A;&#x503C;
+    public boolean include(int value) {
+        boolean result = false;
+        for (int i = 0; i &lt; index; i++) {
+            if (intArray[i] == value) {
+                result = true;
+            }
+        }
+        return result;
+    }
+
+    // &#x5192;&#x6CE1;&#x6392;&#x5E8F;
+    public void bubbleSort() {
+        for (int i = 0; i &lt; index; i++) {
+            for (int j = 0; j &lt; index; j++) {
+                if (intArray[i] &lt; intArray[j]) {
+                    int tmp = intArray[j];
+                    intArray[j] = intArray[i];
+                    intArray[i] = tmp;
+                }
+            }
+        }
+        this.show();
+    }
+
+    // &#x9009;&#x62E9;&#x6392;&#x5E8F;
+    public void selectSort() {
+        for (int i = 0; i &lt; index; i++) {
+            for (int j = i; i &lt; index; i++) {
+                if (intArray[j] &gt; intArray[j + 1]) {
+                    int tmp = intArray[j];
+                    intArray[j] = intArray[j + 1];
+                    intArray[j + 1] = tmp;
+                }
+            }
+        }
+        this.show();
+    }
+}
+</code></pre><p>Array &#x7684;&#x4F7F;&#x7528;</p>
+<pre><code>public class ArrayTest {
+    public static void main(String[] args) {
+        Array arr = new Array(20);
+        arr.push(32);
+        arr.push(122);
+        arr.push(25);
+        arr.push(53);
+        arr.push(3);
+        arr.push(61);
+        arr.push(152);
+        arr.push(31);
+        arr.push(68);
+        arr.push(88);
+        arr.push(1000); // &#x5C3E;&#x90E8;&#x63A8;&#x5165;1000
+        arr.unshift(0); // &#x5934;&#x90E8;&#x63A8;&#x5165;0
+        arr.pop(); // &#x5C3E;&#x90E8;&#x5220;&#x9664;
+        arr.shift(); // &#x5934;&#x90E8;&#x5220;&#x9664;
+        arr.show();
+        System.out.println(arr.find(152) == 1 ? &quot;&#x5B58;&#x5728;&quot; : &quot;&#x4E0D;&#x5B58;&#x5728;&quot;);
+        System.out.println(arr.length);
+        arr.update(6, 888);
+        arr.show();
+        System.out.println(arr.include(88) ? &quot;&#x5B58;&#x5728;&quot; : &quot;&#x4E0D;&#x5B58;&#x5728;&quot;);
+        System.out.println(&quot;&#x5192;&#x6CE1;&#x6392;&#x5E8F;&quot;);
+        arr.bubbleSort();
+    }
+}
 </code></pre><h2 id="doc"><a name="doc" class="anchor-navigation-ex-anchor" href="#doc"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. doc</h2>
 <ul>
 <li><a href="https://juejin.im/post/5b3c30bde51d451964620710#heading-2" target="_blank">&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E;&#x7B97;&#x6CD5;&#xFF08;java&#xFF09;</a></li>
@@ -298,10 +469,14 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 数据结构与算法">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 数据结构与算法">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Java排序算法.html" class="navigation navigation-next " aria-label="Next page: Java 排序算法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -310,7 +485,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"线性表","level":"3.1.1","depth":2,"previous":{"title":"数据结构与算法","level":"3.1","depth":1,"path":"Java数据结构与算法/README.md","ref":"Java数据结构与算法/README.md","articles":[{"title":"线性表","level":"3.1.1","depth":2,"path":"Java数据结构与算法/线性表.md","ref":"Java数据结构与算法/线性表.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-comscore","toggle-chapters","expandable-chapters","chapter-fold","edit-link","lightbox","copy-code-button","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页面","base":"//github.com/easterCat/java-starter/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"expandable-chapters":{}},"theme":"default","author":"qingcheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java-starter","language":"zh-hans","gitbook":"*"},"file":{"path":"Java数据结构与算法/线性表.md","mtime":"2020-01-08T09:28:41.750Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-08T09:33:32.009Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"线性表","level":"3.1.1","depth":2,"next":{"title":"Java 排序算法","level":"3.1.2","depth":2,"path":"Java数据结构与算法/Java排序算法.md","ref":"Java数据结构与算法/Java排序算法.md","articles":[]},"previous":{"title":"数据结构与算法","level":"3.1","depth":1,"path":"Java数据结构与算法/README.md","ref":"Java数据结构与算法/README.md","articles":[{"title":"线性表","level":"3.1.1","depth":2,"path":"Java数据结构与算法/线性表.md","ref":"Java数据结构与算法/线性表.md","articles":[]},{"title":"Java 排序算法","level":"3.1.2","depth":2,"path":"Java数据结构与算法/Java排序算法.md","ref":"Java数据结构与算法/Java排序算法.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-comscore","toggle-chapters","expandable-chapters","chapter-fold","edit-link","lightbox","copy-code-button","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页面","base":"//github.com/easterCat/java-starter/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"expandable-chapters":{}},"theme":"default","author":"qingcheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java-starter","language":"zh-hans","gitbook":"*"},"file":{"path":"Java数据结构与算法/线性表.md","mtime":"2020-01-08T09:51:36.168Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-08T09:52:41.524Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
