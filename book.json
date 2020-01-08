@@ -7,11 +7,10 @@
     "toggle-chapters",
     "expandable-chapters",
     "chapter-fold",
-    "back-to-top-button",
     "edit-link",
     "lightbox",
     "copy-code-button",
-    "simple-page-toc"
+    "anchor-navigation-ex"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -21,9 +20,12 @@
       "base": "//github.com/easterCat/java-starter/master",
       "label": "编辑此页面"
     },
-    "simple-page-toc": {
-      "maxDepth": 3,
-      "skipFirstH1": true
+    "anchor-navigation-ex": {
+      "isRewritePageTitle": true,
+      "isShowTocTitleIcon": true,
+      "tocLevel1Icon": "fa fa-hand-o-right",
+      "tocLevel2Icon": "fa fa-hand-o-right",
+      "tocLevel3Icon": "fa fa-hand-o-right"
     }
   }
 }
