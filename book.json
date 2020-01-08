@@ -14,7 +14,7 @@
   ],
   "pluginsConfig": {
     "anchor-navigation-ex": {
-      "showLevel": false
+      "showLevel": true
     },
     "theme-default": {
       "showLevel": false

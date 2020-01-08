@@ -1,27 +1,25 @@
 # List
 
-
-
 ### List
 
-在集合类中，List是最基础的一种集合：它是一种有序链表。
+在集合类中，List 是最基础的一种集合：它是一种有序链表。
 
-List的行为和数组几乎完全相同：List内部按照放入元素的先后顺序存放，每个元素都可以通过索引确定自己的位置，List的索引和数组一样，从0开始。
+List 的行为和数组几乎完全相同：List 内部按照放入元素的先后顺序存放，每个元素都可以通过索引确定自己的位置，List 的索引和数组一样，从 0 开始。
 
-数组和List类似，也是有序结构，如果我们使用数组，在添加和删除元素的时候，会非常不方便。
+数组和 List 类似，也是有序结构，如果我们使用数组，在添加和删除元素的时候，会非常不方便。
 
-我们考察List接口，可以看到几个主要的接口方法：
+我们考察 List 接口，可以看到几个主要的接口方法：
 
-* 在末尾添加一个元素：void add\(E e\)
-* 在指定索引添加一个元素：void add\(int index, E e\)
-* 删除指定索引的元素：int remove\(int index\)
-* 删除某个元素：int remove\(Object e\)
-* 获取指定索引的元素：E get\(int index\)
-* 获取链表大小（包含元素的个数）：int size\(\)
+- 在末尾添加一个元素：void add\(E e\)
+- 在指定索引添加一个元素：void add\(int index, E e\)
+- 删除指定索引的元素：int remove\(int index\)
+- 删除某个元素：int remove\(Object e\)
+- 获取指定索引的元素：E get\(int index\)
+- 获取链表大小（包含元素的个数）：int size\(\)
 
-### List的特点
+### List 的特点
 
-使用List时，我们要关注List接口的规范。List接口允许我们添加重复的元素，即List内部的元素可以重复,List还允许添加null.
+使用 List 时，我们要关注 List 接口的规范。List 接口允许我们添加重复的元素，即 List 内部的元素可以重复,List 还允许添加 null.
 
 ```text
 import java.util.ArrayList;
@@ -40,9 +38,9 @@ public class Main {
 }
 ```
 
-### 创建/遍历List
+### 创建/遍历 List
 
-除了使用ArrayList和LinkedList，我们还可以通过List接口提供的of\(\)方法，根据给定元素快速创建List,但是List.of\(\)方法不接受null值，如果传入null，会抛出NullPointerException异常。
+除了使用 ArrayList 和 LinkedList，我们还可以通过 List 接口提供的 of\(\)方法，根据给定元素快速创建 List,但是 List.of\(\)方法不接受 null 值，如果传入 null，会抛出 NullPointerException 异常。
 
 创建
 
@@ -52,13 +50,13 @@ List<Integer> list = List.of(1, 2, 5);
 
 遍历的两种方法
 
-第一种方式并不推荐，一是代码复杂，二是因为get\(int\)方法只有ArrayList的实现是高效的，换成LinkedList后，索引越大，访问速度越慢。
+第一种方式并不推荐，一是代码复杂，二是因为 get\(int\)方法只有 ArrayList 的实现是高效的，换成 LinkedList 后，索引越大，访问速度越慢。
 
-所以我们要始终坚持使用迭代器Iterator来访问List。Iterator本身也是一个对象，但它是由List的实例调用iterator\(\)方法的时候创建的。Iterator对象知道如何遍历一个List，并且不同的List类型，返回的Iterator对象实现也是不同的，但总是具有最高的访问效率。
+所以我们要始终坚持使用迭代器 Iterator 来访问 List。Iterator 本身也是一个对象，但它是由 List 的实例调用 iterator\(\)方法的时候创建的。Iterator 对象知道如何遍历一个 List，并且不同的 List 类型，返回的 Iterator 对象实现也是不同的，但总是具有最高的访问效率。
 
-Iterator对象有两个方法：boolean hasNext\(\)判断是否有下一个元素，E next\(\)返回下一个元素。
+Iterator 对象有两个方法：boolean hasNext\(\)判断是否有下一个元素，E next\(\)返回下一个元素。
 
-通过Iterator遍历List永远是最高效的方式。并且，由于Iterator遍历是如此常用，所以，Java的for each循环本身就可以帮我们使用Iterator遍历。
+通过 Iterator 遍历 List 永远是最高效的方式。并且，由于 Iterator 遍历是如此常用，所以，Java 的 for each 循环本身就可以帮我们使用 Iterator 遍历。
 
 ```text
 import java.util.Iterator;
@@ -97,9 +95,9 @@ public class Main {
 }
 ```
 
-实际上，只要实现了Iterable接口的集合类都可以直接用for each循环来遍历，Java编译器本身并不知道如何遍历集合对象，但它会自动把for each循环变成Iterator的调用，原因就在于Iterable接口定义了一个Iterator iterator\(\)方法，强迫集合类必须返回一个Iterator实例
+实际上，只要实现了 Iterable 接口的集合类都可以直接用 for each 循环来遍历，Java 编译器本身并不知道如何遍历集合对象，但它会自动把 for each 循环变成 Iterator 的调用，原因就在于 Iterable 接口定义了一个 Iterator iterator\(\)方法，强迫集合类必须返回一个 Iterator 实例
 
-### List和Array转换
+### List 和 Array 转换
 
 ```text
 import java.util.Iterator;
@@ -153,7 +151,7 @@ public class Main {
 }
 ```
 
-### 判断list的元素存在和下标
+### 判断 list 的元素存在和下标
 
 ```text
 import java.util.List;
@@ -174,4 +172,3 @@ public class Main {
     }
 }
 ```
-
