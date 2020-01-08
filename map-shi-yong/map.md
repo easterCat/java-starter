@@ -1,6 +1,6 @@
 # Map
 
-### 集合
+## 集合
 
 什么是集合（Collection）？集合就是“由若干个确定的元素所构成的整体”。
 
@@ -32,7 +32,7 @@ String first = ss[0]; // 可以获取String对象
 - 可变大小的顺序链表；
 - 保证无重复元素的集合；
 
-### Collection
+## Collection
 
 Java 标准库自带的 java.util 包提供了集合类：Collection，它是除 Map 外所有其他集合类的根接口。Java 的 java.util 包主要提供了以下三种类型的集合：
 
