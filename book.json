@@ -13,6 +13,9 @@
     "anchor-navigation-ex"
   ],
   "pluginsConfig": {
+    "anchor-navigation-ex": {
+      "associatedWithSummary": true
+    },
     "theme-default": {
       "showLevel": true
     },

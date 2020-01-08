@@ -81,3 +81,4 @@ touch book.json
 ## doc
 
 - [gitbook 简明教程](http://www.chengweiyang.cn/gitbook/basic-usage/README.html)
+- [GitBook 插件](http://gitbook.zhangjikai.com/plugins.html)
