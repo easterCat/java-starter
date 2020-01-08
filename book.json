@@ -14,7 +14,7 @@
   ],
   "pluginsConfig": {
     "edit-link": {
-      "base": "//github.com/easterCat/java-starter/master/docs",
+      "base": "//github.com/easterCat/java-starter/docs",
       "label": "编辑此页面"
     }
   }
