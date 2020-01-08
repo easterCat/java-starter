@@ -11,7 +11,7 @@
     "edit-link",
     "lightbox",
     "copy-code-button",
-    "page-toc-button"
+    "toc2"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -21,9 +21,9 @@
       "base": "//github.com/easterCat/java-starter/master",
       "label": "编辑此页面"
     },
-    "page-toc-button": {
-      "maxTocDepth": 2,
-      "minTocSize": 2
+    "toc2": {
+      "addClass": true,
+      "className": "toc"
     }
   }
 }
