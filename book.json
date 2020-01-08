@@ -14,7 +14,9 @@
   ],
   "pluginsConfig": {
     "anchor-navigation-ex": {
-      "multipleH1": false,
+      "showLevel": false
+    },
+    "theme-default": {
       "showLevel": false
     },
     "edit-link": {
