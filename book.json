@@ -2,10 +2,22 @@
   "title": "Java-starter",
   "author": "qingcheng",
   "language": "zh-hans",
-  "plugins": ["theme-comscore", "toggle-chapters", "chapter-fold"],
+  "plugins": [
+    "theme-comscore",
+    "toggle-chapters",
+    "expandable-chapters",
+    "chapter-fold",
+    "back-to-top-button",
+    "edit-link",
+    "lightbox"
+  ],
   "pluginsConfig": {
     "theme-default": {
       "showLevel": true
+    },
+    "edit-link": {
+      "base": "//github.com/easterCat/java-starter/master",
+      "label": "编辑此页面"
     }
   }
 }
