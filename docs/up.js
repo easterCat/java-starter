@@ -1,4 +1,4 @@
 const { execSync } = require("child_process");
 const stamp = `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`;
-const command = `gitbook build && gitbook build ./ ./docs && git pull && git add . && git commit -m "commonjs快速提交=>${stamp}" && git push -u origin master`;
+const command = `gitbook build && gitbook build ./ ./docs && git pull && git add . && git commit -m "java-starter快速提交=>${stamp}" && git push -u origin master`;
 execSync(command);
