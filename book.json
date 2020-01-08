@@ -14,7 +14,9 @@
   ],
   "pluginsConfig": {
     "anchor-navigation-ex": {
-      "associatedWithSummary": true
+      "associatedWithSummary": true,
+      "multipleH1": false,
+      "showLevel": false
     },
     "theme-default": {
       "showLevel": true
