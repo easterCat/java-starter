@@ -5,6 +5,14 @@
 ## java 基础
 
 - [java 基础](Java基础/README.md)
+  - [变量的类型](Java基础/变量的类型.md)
+  - [基本数据类型](Java基础/基本数据类型.md)
+  - [修饰符](Java基础/修饰符.md)
+  - [运算符](Java基础/运算符.md)
+  - [条件语句](Java基础/条件语句.md)
+  - [数组](Java基础/数组.md)
+  - [字符串](Java基础/字符串.md)
+  - [StringBuffer和StringBuilder类](Java基础/StringBuffer和StringBuilder类.md)
   - [Map](Java基础/map.md)
   - [List](Java基础/list.md)
 
