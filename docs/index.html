@@ -21,10 +21,6 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
-                
-            
-                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
                 
             
@@ -225,7 +221,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="gitbook-cli">gitbook-cli</h2>
-<pre class="language-"><code>npm install -g gitbook-cli
+<pre><code>npm install -g gitbook-cli
 mkdir book
 cd book
 gitbook init
@@ -234,12 +230,12 @@ gitbook init
 <li>README.md &#x5C06;&#x5305;&#x542B;&#x7535;&#x5B50;&#x4E66;&#x7684;&#x7B80;&#x4ECB;</li>
 <li>SUMMARY.md &#x5C06;&#x5305;&#x542B;&#x7535;&#x5B50;&#x4E66;&#x7684;&#x76EE;&#x5F55;</li>
 </ul>
-<pre class="language-"><code>gitbook serve
+<pre><code>gitbook serve
 </code></pre><p>&#x53EF;&#x4EE5;&#x5728;<a href="http://localhost:4000&#x9884;&#x89C8;&#x4E66;&#x7C4D;" target="_blank">http://localhost:4000&#x9884;&#x89C8;&#x4E66;&#x7C4D;</a></p>
-<pre class="language-"><code>gitbook build
+<pre><code>gitbook build
 </code></pre><p>&#x5C06;&#x7535;&#x5B50;&#x4E66;&#x7684;&#x5185;&#x5BB9;&#x5236;&#x4F5C;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#x5728; _book &#x76EE;&#x5F55;&#x4E2D;&#x3002;</p>
 <h2 id="github-pages">GitHub Pages</h2>
-<p>GitHub Pages &#x662F; GitHub &#x63D0;&#x4F9B;&#x7684;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x6258;&#x7BA1;&#x670D;&#x52A1;&#x3002;<code>https://<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>username</span><span class="token punctuation">&gt;</span></span>.github.io/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>repository</span><span class="token punctuation">&gt;</span></span>/</code></p>
+<p>GitHub Pages &#x662F; GitHub &#x63D0;&#x4F9B;&#x7684;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x6258;&#x7BA1;&#x670D;&#x52A1;&#x3002;<code>https://&lt;username&gt;.github.io/&lt;repository&gt;/</code></p>
 <p>GitHub Pages &#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x652F;&#x6301;&#x4E0B;&#x9762; 3 &#x4E2A;&#x6765;&#x6E90;&#xFF1A;</p>
 <ul>
 <li>master &#x5206;&#x652F;</li>
@@ -247,11 +243,11 @@ gitbook init
 <li>gh-pages &#x5206;&#x652F;</li>
 </ul>
 <p>&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5728;&#x751F;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;&#x7684;&#x65F6;&#x5019;&#x66F4;&#x6539; build &#x547D;&#x4EE4;</p>
-<pre class="language-"><code>gitbook build ./ ./docs
+<pre><code>gitbook build ./ ./docs
 </code></pre><h2 id="&#x6DFB;&#x52A0;-theme">&#x6DFB;&#x52A0; theme</h2>
-<pre class="language-"><code>touch book.json
+<pre><code>touch book.json
 </code></pre><p>&#x5185;&#x5BB9;</p>
-<pre class="language-"><code>{
+<pre><code>{
   &quot;title&quot;: &quot;Java-starter&quot;,
   &quot;author&quot;: &quot;qingcheng&quot;,
   &quot;authorHomepage&quot;: &quot;http://www.baidu.com&quot;,
@@ -320,7 +316,7 @@ gitbook init
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"初始化","level":"1.1","depth":1,"next":{"title":"集合","level":"2.1","depth":1,"path":"map-shi-yong/README.md","ref":"map-shi-yong/README.md","articles":[{"title":"Map","level":"2.1.1","depth":2,"path":"map-shi-yong/map.md","ref":"map-shi-yong/map.md","articles":[]},{"title":"List","level":"2.1.2","depth":2,"path":"map-shi-yong/list.md","ref":"map-shi-yong/list.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-code","splitter","prism","folding-chapters","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-code":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"qingcheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java-starter","language":"zh-hans","authorHomepage":"http://www.baidu.com","gitbook":"*"},"file":{"path":"README.md","mtime":"2020-01-08T03:46:33.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-08T03:48:13.768Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"初始化","level":"1.1","depth":1,"next":{"title":"集合","level":"2.1","depth":1,"path":"map-shi-yong/README.md","ref":"map-shi-yong/README.md","articles":[{"title":"Map","level":"2.1.1","depth":2,"path":"map-shi-yong/map.md","ref":"map-shi-yong/map.md","articles":[]},{"title":"List","level":"2.1.2","depth":2,"path":"map-shi-yong/list.md","ref":"map-shi-yong/list.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-code","splitter","folding-chapters","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"splitter":{},"folding-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-code":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"qingcheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java-starter","language":"zh-hans","authorHomepage":"http://www.baidu.com","gitbook":"*"},"file":{"path":"README.md","mtime":"2020-01-08T03:46:33.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-08T03:51:25.471Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
