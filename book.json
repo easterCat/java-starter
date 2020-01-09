@@ -18,9 +18,6 @@
     "edit-link": {
       "base": "https://github.com/easterCat/java-starter/edit/master/",
       "label": "编辑此页面"
-    },
-    "prism": {
-      "css": ["prismjs/themes/prism-okaidia.css"]
     }
   }
 }
