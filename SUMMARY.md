@@ -18,6 +18,7 @@
   - [正则表达式](Java基础/正则表达式.md)
   - [流,文件和IO](Java基础/流,文件和IO.md)
   - [StringBuffer和StringBuilder类](Java基础/StringBuffer和StringBuilder类.md)
+  - [Collection](Java基础/Collection.md)
   - [Map](Java基础/map.md)
   - [List](Java基础/list.md)
   - [多线程编程](Java基础/多线程编程.md)
