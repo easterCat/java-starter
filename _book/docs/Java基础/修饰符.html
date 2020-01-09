@@ -37,7 +37,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
                 
             
                 
@@ -554,7 +554,7 @@
 <h3 id="&#x9ED8;&#x8BA4;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;-&#x4E0D;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x5173;&#x952E;&#x5B57;"><a name="&#x9ED8;&#x8BA4;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;-&#x4E0D;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x5173;&#x952E;&#x5B57;" class="anchor-navigation-ex-anchor" href="#&#x9ED8;&#x8BA4;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;-&#x4E0D;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x5173;&#x952E;&#x5B57;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x9ED8;&#x8BA4;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;-&#x4E0D;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x5173;&#x952E;&#x5B57;</h3>
 <p>&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x5305;&#x5185;&#x7684;&#x7C7B;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x3002;&#x63A5;&#x53E3;&#x91CC;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x9690;&#x5F0F;&#x58F0;&#x660E;&#x4E3A; <strong>public static final</strong>,&#x800C;&#x63A5;&#x53E3;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x4E3A; <strong>public</strong>&#x3002;</p>
 <p>&#x5982;&#x4E0B;&#x4F8B;&#x6240;&#x793A;&#xFF0C;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x58F0;&#x660E;&#x53EF;&#x4EE5;&#x4E0D;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x4FEE;&#x9970;&#x7B26;&#x3002;</p>
-<pre><code>String version = &quot;1.5.1&quot;;
+<pre class="language-"><code>String version = &quot;1.5.1&quot;;
 boolean processOrder() {
    return true;
 }
@@ -563,7 +563,7 @@ boolean processOrder() {
 <p>&#x58F0;&#x660E;&#x4E3A;&#x79C1;&#x6709;&#x8BBF;&#x95EE;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x7C7B;&#x4E2D;&#x516C;&#x5171;&#x7684; getter &#x65B9;&#x6CD5;&#x88AB;&#x5916;&#x90E8;&#x7C7B;&#x8BBF;&#x95EE;&#x3002;</p>
 <p>Private &#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x7684;&#x4F7F;&#x7528;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x9690;&#x85CF;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x548C;&#x4FDD;&#x62A4;&#x7C7B;&#x7684;&#x6570;&#x636E;&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x7684;&#x7C7B;&#x4F7F;&#x7528;&#x4E86;&#x79C1;&#x6709;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#xFF1A;</p>
-<pre><code>public class Logger {
+<pre class="language-"><code>public class Logger {
    private String format;
    public String getFormat() {
       return this.format;
@@ -577,7 +577,7 @@ boolean processOrder() {
 <p>&#x88AB;&#x58F0;&#x660E;&#x4E3A; public &#x7684;&#x7C7B;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x548C;&#x63A5;&#x53E3;&#x80FD;&#x591F;&#x88AB;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x7C7B;&#x8BBF;&#x95EE;&#x3002;</p>
 <p>&#x5982;&#x679C;&#x51E0;&#x4E2A;&#x76F8;&#x4E92;&#x8BBF;&#x95EE;&#x7684; public &#x7C7B;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5305;&#x4E2D;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5BFC;&#x5165;&#x76F8;&#x5E94; public &#x7C7B;&#x6240;&#x5728;&#x7684;&#x5305;&#x3002;&#x7531;&#x4E8E;&#x7C7B;&#x7684;&#x7EE7;&#x627F;&#x6027;&#xFF0C;&#x7C7B;&#x6240;&#x6709;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x90FD;&#x80FD;&#x88AB;&#x5176;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x3002;</p>
 <p>&#x4EE5;&#x4E0B;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x4E86;&#x516C;&#x6709;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF1A;</p>
-<pre><code>public static void main(String[] arguments) {
+<pre class="language-"><code>public static void main(String[] arguments) {
    // ...
 }
 </code></pre><p>Java &#x7A0B;&#x5E8F;&#x7684; main() &#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x6210;&#x516C;&#x6709;&#x7684;&#xFF0C;&#x5426;&#x5219;&#xFF0C;Java &#x89E3;&#x91CA;&#x5668;&#x5C06;&#x4E0D;&#x80FD;&#x8FD0;&#x884C;&#x8BE5;&#x7C7B;&#x3002;</p>
@@ -590,7 +590,7 @@ boolean processOrder() {
 <p>protected &#x53EF;&#x4EE5;&#x4FEE;&#x9970;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x65B9;&#x6CD5;&#x6210;&#x5458;&#xFF0C;<strong>&#x4E0D;&#x80FD;&#x4FEE;&#x9970;&#x7C7B;&#xFF08;&#x5185;&#x90E8;&#x7C7B;&#x9664;&#x5916;&#xFF09;</strong>&#x3002;</p>
 <p>&#x5B50;&#x7C7B;&#x80FD;&#x8BBF;&#x95EE; protected &#x4FEE;&#x9970;&#x7B26;&#x58F0;&#x660E;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x4FDD;&#x62A4;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x7C7B;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x7684;&#x7236;&#x7C7B;&#x4F7F;&#x7528;&#x4E86; protected &#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#xFF0C;&#x5B50;&#x7C7B;&#x91CD;&#x5199;&#x4E86;&#x7236;&#x7C7B;&#x7684; openSpeaker() &#x65B9;&#x6CD5;&#x3002;</p>
-<pre><code>class AudioPlayer {
+<pre class="language-"><code>class AudioPlayer {
    protected boolean openSpeaker(Speaker sp) {
       // &#x5B9E;&#x73B0;&#x7EC6;&#x8282;
    }
@@ -628,7 +628,7 @@ class StreamingAudioPlayer extends AudioPlayer {
 </ul>
 <p>&#x5BF9;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x8BBF;&#x95EE;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528; <strong>classname.variablename</strong> &#x548C; <strong>classname.methodname</strong> &#x7684;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;&#x3002;</p>
 <p>&#x5982;&#x4E0B;&#x4F8B;&#x6240;&#x793A;&#xFF0C;static&#x4FEE;&#x9970;&#x7B26;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x7C7B;&#x65B9;&#x6CD5;&#x548C;&#x7C7B;&#x53D8;&#x91CF;&#x3002;</p>
-<pre><code>public class InstanceCounter {
+<pre class="language-"><code>public class InstanceCounter {
    private static int numInstances = 0;
    protected static int getCount() {
       return numInstances;
@@ -653,13 +653,13 @@ class StreamingAudioPlayer extends AudioPlayer {
    }
 }
 </code></pre><p>&#x4EE5;&#x4E0A;&#x5B9E;&#x4F8B;&#x8FD0;&#x884C;&#x7F16;&#x8F91;&#x7ED3;&#x679C;&#x5982;&#x4E0B;:</p>
-<pre><code>Starting with 0 instances
+<pre class="language-"><code>Starting with 0 instances
 Created 500 instances
 </code></pre><h3 id="final-&#x4FEE;&#x9970;&#x7B26;"><a name="final-&#x4FEE;&#x9970;&#x7B26;" class="anchor-navigation-ex-anchor" href="#final-&#x4FEE;&#x9970;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. final &#x4FEE;&#x9970;&#x7B26;</h3>
 <p><strong>final &#x53D8;&#x91CF;&#xFF1A;</strong></p>
 <p>final &#x8868;&#x793A;&quot;&#x6700;&#x540E;&#x7684;&#x3001;&#x6700;&#x7EC8;&#x7684;&quot;&#x542B;&#x4E49;&#xFF0C;&#x53D8;&#x91CF;&#x4E00;&#x65E6;&#x8D4B;&#x503C;&#x540E;&#xFF0C;&#x4E0D;&#x80FD;&#x88AB;&#x91CD;&#x65B0;&#x8D4B;&#x503C;&#x3002;&#x88AB; final &#x4FEE;&#x9970;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x521D;&#x59CB;&#x503C;&#x3002;</p>
 <p>final &#x4FEE;&#x9970;&#x7B26;&#x901A;&#x5E38;&#x548C; static &#x4FEE;&#x9970;&#x7B26;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x7C7B;&#x5E38;&#x91CF;&#x3002;</p>
-<pre><code>public class Test{
+<pre class="language-"><code>public class Test{
   final int value = 10;
   // &#x4E0B;&#x9762;&#x662F;&#x58F0;&#x660E;&#x5E38;&#x91CF;&#x7684;&#x5B9E;&#x4F8B;
   public static final int BOXWIDTH = 6;
@@ -673,14 +673,14 @@ Created 500 instances
 <p>&#x7236;&#x7C7B;&#x4E2D;&#x7684; final &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x88AB;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x88AB;&#x4E4B;&#x7C7B;&#x91CD;&#x5199;&#x3002;</p>
 <p>&#x58F0;&#x660E; final &#x65B9;&#x6CD5;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x9632;&#x6B62;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x5185;&#x5BB9;&#x88AB;&#x4FEE;&#x6539;&#x3002;</p>
 <p>&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x4F7F;&#x7528; final &#x4FEE;&#x9970;&#x7B26;&#x58F0;&#x660E;&#x65B9;&#x6CD5;&#x3002;</p>
-<pre><code>public class Test{
+<pre class="language-"><code>public class Test{
     public final void changeName(){
        // &#x65B9;&#x6CD5;&#x4F53;
     }
 }
 </code></pre><p><strong>final &#x7C7B;</strong></p>
 <p>final &#x7C7B;&#x4E0D;&#x80FD;&#x88AB;&#x7EE7;&#x627F;&#xFF0C;&#x6CA1;&#x6709;&#x7C7B;&#x80FD;&#x591F;&#x7EE7;&#x627F; final &#x7C7B;&#x7684;&#x4EFB;&#x4F55;&#x7279;&#x6027;&#x3002;</p>
-<pre><code>public final class Test {
+<pre class="language-"><code>public final class Test {
    // &#x7C7B;&#x4F53;
 }
 </code></pre><h3 id="abstract-&#x4FEE;&#x9970;&#x7B26;"><a name="abstract-&#x4FEE;&#x9970;&#x7B26;" class="anchor-navigation-ex-anchor" href="#abstract-&#x4FEE;&#x9970;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. abstract &#x4FEE;&#x9970;&#x7B26;</h3>
@@ -688,7 +688,7 @@ Created 500 instances
 <p>&#x62BD;&#x8C61;&#x7C7B;&#x4E0D;&#x80FD;&#x7528;&#x6765;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#xFF0C;&#x58F0;&#x660E;&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x552F;&#x4E00;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x5C06;&#x6765;&#x5BF9;&#x8BE5;&#x7C7B;&#x8FDB;&#x884C;&#x6269;&#x5145;&#x3002;</p>
 <p>&#x4E00;&#x4E2A;&#x7C7B;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x88AB; abstract &#x548C; final &#x4FEE;&#x9970;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x5305;&#x542B;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x7C7B;&#x4E00;&#x5B9A;&#x8981;&#x58F0;&#x660E;&#x4E3A;&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x51FA;&#x73B0;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#x3002;</p>
 <p>&#x62BD;&#x8C61;&#x7C7B;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x548C;&#x975E;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x3002;</p>
-<pre><code>abstract class Caravan{
+<pre class="language-"><code>abstract class Caravan{
    private double price;
    private String model;
    private String year;
@@ -701,7 +701,7 @@ Created 500 instances
 <p>&#x4EFB;&#x4F55;&#x7EE7;&#x627F;&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x5B50;&#x7C7B;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x7236;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x9664;&#x975E;&#x8BE5;&#x5B50;&#x7C7B;&#x4E5F;&#x662F;&#x62BD;&#x8C61;&#x7C7B;&#x3002;</p>
 <p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x5305;&#x542B;&#x82E5;&#x5E72;&#x4E2A;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x7C7B;&#x5FC5;&#x987B;&#x58F0;&#x660E;&#x4E3A;&#x62BD;&#x8C61;&#x7C7B;&#x3002;&#x62BD;&#x8C61;&#x7C7B;&#x53EF;&#x4EE5;&#x4E0D;&#x5305;&#x542B;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x3002;</p>
 <p>&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x7684;&#x58F0;&#x660E;&#x4EE5;&#x5206;&#x53F7;&#x7ED3;&#x5C3E;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<strong>public abstract sample();</strong>&#x3002;</p>
-<pre><code>public abstract class SuperClass{
+<pre class="language-"><code>public abstract class SuperClass{
     abstract void m(); //&#x62BD;&#x8C61;&#x65B9;&#x6CD5;
 }
 
@@ -713,17 +713,17 @@ class SubClass extends SuperClass{
 }
 </code></pre><h3 id="synchronized-&#x4FEE;&#x9970;&#x7B26;"><a name="synchronized-&#x4FEE;&#x9970;&#x7B26;" class="anchor-navigation-ex-anchor" href="#synchronized-&#x4FEE;&#x9970;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. synchronized &#x4FEE;&#x9970;&#x7B26;</h3>
 <p>synchronized &#x5173;&#x952E;&#x5B57;&#x58F0;&#x660E;&#x7684;&#x65B9;&#x6CD5;&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x53EA;&#x80FD;&#x88AB;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8BBF;&#x95EE;&#x3002;synchronized &#x4FEE;&#x9970;&#x7B26;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x4E8E;&#x56DB;&#x4E2A;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x3002;</p>
-<pre><code>public synchronized void showDetails(){
+<pre class="language-"><code>public synchronized void showDetails(){
     .......
 }
 </code></pre><h3 id="transient-&#x4FEE;&#x9970;&#x7B26;"><a name="transient-&#x4FEE;&#x9970;&#x7B26;" class="anchor-navigation-ex-anchor" href="#transient-&#x4FEE;&#x9970;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. transient &#x4FEE;&#x9970;&#x7B26;</h3>
 <p>&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x88AB; transient &#x4FEE;&#x9970;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;java &#x865A;&#x62DF;&#x673A;(JVM)&#x8DF3;&#x8FC7;&#x8BE5;&#x7279;&#x5B9A;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
 <p>&#x8BE5;&#x4FEE;&#x9970;&#x7B26;&#x5305;&#x542B;&#x5728;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x7528;&#x6765;&#x9884;&#x5904;&#x7406;&#x7C7B;&#x548C;&#x53D8;&#x91CF;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
-<pre><code>public transient int limit = 55;   // &#x4E0D;&#x4F1A;&#x6301;&#x4E45;&#x5316;
+<pre class="language-"><code>public transient int limit = 55;   // &#x4E0D;&#x4F1A;&#x6301;&#x4E45;&#x5316;
 public int b; // &#x6301;&#x4E45;&#x5316;
 </code></pre><h3 id="volatile-&#x4FEE;&#x9970;&#x7B26;"><a name="volatile-&#x4FEE;&#x9970;&#x7B26;" class="anchor-navigation-ex-anchor" href="#volatile-&#x4FEE;&#x9970;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.6. volatile &#x4FEE;&#x9970;&#x7B26;</h3>
 <p>volatile &#x4FEE;&#x9970;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x5728;&#x6BCF;&#x6B21;&#x88AB;&#x7EBF;&#x7A0B;&#x8BBF;&#x95EE;&#x65F6;&#xFF0C;&#x90FD;&#x5F3A;&#x5236;&#x4ECE;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x4E2D;&#x91CD;&#x65B0;&#x8BFB;&#x53D6;&#x8BE5;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x5F53;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x4F1A;&#x5F3A;&#x5236;&#x7EBF;&#x7A0B;&#x5C06;&#x53D8;&#x5316;&#x503C;&#x56DE;&#x5199;&#x5230;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x3002;&#x8FD9;&#x6837;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x523B;&#xFF0C;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x7EBF;&#x7A0B;&#x603B;&#x662F;&#x770B;&#x5230;&#x67D0;&#x4E2A;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x7684;&#x540C;&#x4E00;&#x4E2A;&#x503C;&#x3002;&#x4E00;&#x4E2A; volatile &#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x53EF;&#x80FD;&#x662F; null&#x3002;</p>
-<pre><code>public class MyRunnable implements Runnable
+<pre class="language-"><code>public class MyRunnable implements Runnable
 {
     private volatile boolean active;
     public void run() {
@@ -782,7 +782,7 @@ public int b; // &#x6301;&#x4E45;&#x5316;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"修饰符","level":"2.1.3","depth":2,"next":{"title":"运算符","level":"2.1.4","depth":2,"path":"Java基础/运算符.md","ref":"Java基础/运算符.md","articles":[]},"previous":{"title":"基本数据类型","level":"2.1.2","depth":2,"path":"Java基础/基本数据类型.md","ref":"Java基础/基本数据类型.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","toggle-chapters","expandable-chapters","chapter-fold","edit-link","lightbox","copy-code-button","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页面","base":"https://github.com/easterCat/java-starter/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"expandable-chapters":{}},"theme":"default","author":"qingcheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java-starter","language":"zh-hans","gitbook":"*"},"file":{"path":"Java基础/修饰符.md","mtime":"2020-01-08T12:18:50.235Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-09T02:55:25.547Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"修饰符","level":"2.1.3","depth":2,"next":{"title":"运算符","level":"2.1.4","depth":2,"path":"Java基础/运算符.md","ref":"Java基础/运算符.md","articles":[]},"previous":{"title":"基本数据类型","level":"2.1.2","depth":2,"path":"Java基础/基本数据类型.md","ref":"Java基础/基本数据类型.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","toggle-chapters","expandable-chapters","chapter-fold","edit-link","lightbox","copy-code-button","anchor-navigation-ex","prism","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页面","base":"https://github.com/easterCat/java-starter/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"expandable-chapters":{}},"theme":"default","author":"qingcheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java-starter","language":"zh-hans","gitbook":"*"},"file":{"path":"Java基础/修饰符.md","mtime":"2020-01-08T12:18:50.235Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-09T03:01:38.395Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
