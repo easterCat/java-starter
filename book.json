@@ -10,9 +10,7 @@
     "edit-link",
     "lightbox",
     "copy-code-button",
-    "anchor-navigation-ex",
-    "prism",
-    "-highlight"
+    "anchor-navigation-ex"
   ],
   "pluginsConfig": {
     "edit-link": {
